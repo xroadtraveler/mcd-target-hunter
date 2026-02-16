@@ -1,0 +1,30 @@
+MCD Target Hunter – CHANGELOG
+=============================
+
+Version 1.0.0
+-------------
+Initial stable internal release.
+
+Added:
+- Windows GUI for scanning CNC / MCD output files
+- User-configurable Target and Parent search strings
+- Detection of Target hits with line numbers
+- Context capture:
+  - Operation Name (full line)
+  - Operation Number line
+  - Most recent tool change (M06)
+  - Associated tool number line (T##)
+- One-row-per-hit CSV output for easy filtering
+- Config persistence (last-used settings saved per user)
+- File picker for target NC/MCD files
+- Output location selection with defaults
+- Optional auto-open of generated CSV report
+
+Technical:
+- Backend / frontend split for maintainability
+- PyQt-based GUI
+- Windows-compatible executable build via PyInstaller
+
+Notes:
+- Designed for CATIA / MCD-generated NC output
+- Intended for NC programmers and manufacturing engineers
